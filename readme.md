@@ -1,5 +1,5 @@
 # Script para Actualizar Nombre de Proyectos
-Antes de ejecutarlo es necesario actualizar las credenciales que se encuentran en el archivo **.env** con las credenciales de Producción. Se necesita acceso a Bizneo Producción y acceso a la Base de Datos.
+Antes de ejecutarlo es necesario actualizar las credenciales que se encuentran en el archivo **.env.example** y renombrar el archivo a **.env** con las credenciales de Producción. Se necesita acceso a Bizneo Producción y acceso a la Base de Datos.
 
 ## Requisitios
 - Cuenta en Bizneo
