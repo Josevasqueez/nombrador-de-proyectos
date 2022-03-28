@@ -1,0 +1,17 @@
+{
+  "name": "actualizar-proyectos",
+  "version": "1.0.0",
+  "description": "Este Script se encarga de actualizar los nombres errados dentro de Bizneo con la información de Sigestion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro Vásquez",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "pg": "^8.7.3",
+    "validator": "^13.7.0"
+  }
+}
