@@ -1,6 +1,7 @@
 const Bizneo = require("./controllers/BizneoController");
 const Postgres = require("./controllers/PostgresController");
 const Validator = require('validator');
+const fs = require('fs');
 require('dotenv').config()
 
 const ActualizarNombres = async () => {
@@ -23,9 +24,17 @@ const ActualizarNombres = async () => {
             options_attributes: newItems
         }
     }
-    console.log("Actualizando proyectos en Bizneo...");
-    await Bizneo.updateProjectField(body, token);
-    console.log("Actualizados todos los proyectos.");
+    console.log("Generando los proyectos en un JSON...");
+    fs.writeFile("camposFormulario.json", JSON.stringify(body), (err) => {
+        if (err)
+            console.log(err);
+        else {
+            console.log("Archivo creado con éxito.\n");
+        }
+    });
+    // console.log("Actualizando proyectos en Bizneo...");
+    // await Bizneo.updateProjectField(body, token);
+    // console.log("Actualizados todos los proyectos.");
 }
 
 try {
